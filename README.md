@@ -1,7 +1,7 @@
 # Divorce-model
 Are you getting divorced ? Fill in our survey and find out !
 
-This project requires the flask, streamlit and requests libraries. ALl of them can be installed using the following commands :
+This project requires the flask, streamlit and requests libraries. All of them can be installed using the following commands :
 ```pip install flask```
 ```pip install streamlit```
 ```pip install requests```
