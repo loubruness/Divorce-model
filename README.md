@@ -7,7 +7,7 @@ This project requires the flask, streamlit and requests libraries. ALl of them c
 ```pip install requests```
 
 To test it out, download all the files and place them in a repository. Open two terminals :
-- In the first one, enter the command ```streamlit run front.py``` to launch the front server. A window should open in your browser.
+- In the first one, enter the command ```streamlit run front.py``` to launch the front server. A window should open in your browser. If it doesn't, you should be able to access it at the following address : http://localhost:8501/
 - In the second one, enter the command ```flask --app server run``` to launch the API.
 Then, you should answer all the questions in the window of your browser and submit them to know your fate.
 
