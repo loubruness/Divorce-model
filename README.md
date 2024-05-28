@@ -11,6 +11,6 @@ To test it out, download all the files and place them in a repository. Open two 
 - In the second one, enter the command ```flask --app server run``` to launch the API.
 Then, you should answer all the questions in the window of your browser and submit them to know your fate.
 
-If it doesn't work, please check that the flask server is running on the port 5000 of your localhost. If not, you should replace the api_url with "http://localhost:<your_port>/predict".
+If it doesn't work, please check that the flask server is running on the port 5000 of your localhost. If not, you should replace the api_url in server.py with "http://localhost:<your_port>/predict".
 You can find the url used by flask in your terminal :
 ![image](https://github.com/loubruness/Divorce-model/assets/94390007/4e64eaad-13ba-426d-86bb-a5ad8c17a9bf)
