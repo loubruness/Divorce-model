@@ -135,8 +135,10 @@ if submit_button:
     if response.status_code == 200:
         prediction = response.json().get("prediction")
         if prediction == 0:
-            st.write(f'Your predicted score is: {prediction}! Start looking for a divorce lawyer...')
+            st.write(f'     ')
+            st.write(f'Your predicted score is: {prediction[0]}! Start looking for a divorce lawyer...')
         else:
-            st.write(f'Your predicted score is: {prediction}! Congratulations, your marriage is safe!')
+            st.write(f'     ')
+            st.write(f'Your predicted score is: {prediction[0]}! Congratulations, your marriage is safe!')
     else:
         st.write(f"Error: Unable to get prediction. Status code: {response.status_code}")
