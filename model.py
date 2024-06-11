@@ -51,22 +51,6 @@ print(f'Log-Loss: {log_loss_value}')
 
 joblib.dump(model, "divorceclassification.joblib")
 
-
-# scores = cross_val_score(model, X, Y, cv=10)
-# mse = mean_squared_error(Y_test, Y_pred)
-# r2 = r2_score(Y_test, Y_pred)
-
-# print(f'Cross-validation score : {scores}')
-# print(f'Mean Squared Error: {mse}')
-# print(f'R-squared: {r2}')
-
-# print(confusion_matrix(Y_test,Y_pred))
-# print("\n")
-# print(classification_report(Y_test,Y_pred))
-
-# print("Training set score for SVM_mul: %f" % model.score(X_train , Y_train))
-# print("Testing  set score for SVM_mul: %f" % model.score(X_test, Y_test ))
-
 # Function to predict a value
 def predict_value(input_features):
     # Convert input features to DataFrame 
