@@ -62,7 +62,7 @@ if on:
         
         if response.status_code == 200:
             prediction = response.json().get("prediction")
-            if prediction == 0:
+            if prediction[0] == 0:
                 st.write(f'     ')
                 st.write(f'Your predicted score is: {prediction[0]}! Start looking for a divorce lawyer...')
             else:
@@ -70,6 +70,7 @@ if on:
                 st.write(f'Your predicted score is: {prediction[0]}! Congratulations, your marriage is safe!')
         else:
             st.write(f"Error: Unable to get prediction. Status code: {response.status_code}")
+
 else :
     with st.form(key='my_form'):
         A1 =  st.slider("Q1 : If one of us apologizes when our discussion deteriorates, the discussion ends.",max_value=4)
@@ -193,7 +194,7 @@ else :
         
         if response.status_code == 200:
             prediction = response.json().get("prediction")
-            if prediction == 0:
+            if prediction[0] == 0:
                 st.write(f'     ')
                 st.write(f'Your predicted score is: {prediction[0]}! Start looking for a divorce lawyer...')
             else:
