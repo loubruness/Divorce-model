@@ -4,14 +4,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, log_loss
 
-# Step 1: Read the CSV file
 file_path = 'c:/Users/pauli/Documents/M1/S8/ML/Projet/divorce.csv'
 data = pd.read_csv(file_path)
 
 # Clean the dataset
 data = data.dropna()
 
-# Select relevant columns for regression (assuming 'X' is the feature and 'Y' is the target)
+# Select relevant columns for regression
 X = data.drop(['Divorce'], axis=1)
 Y = data['Divorce']
 
